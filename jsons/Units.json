@@ -20,7 +20,7 @@
 		"strength": 15,
 		"rangedStrength": 30,
 		"cost": 225,
-		"requiredTech": "Industialization",
+		"requiredTech": "Industrialization",
 		"upgradesTo": "Howitzer",
 		"uniques": ["Ranged attacks may be performed over obstacles"],
 		"obsoleteTech": "Ballistics",
