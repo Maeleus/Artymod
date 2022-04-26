@@ -29,7 +29,6 @@
 	{
 		"name": "Howitzer",
 		"unitType": "Ranged",
-		"replaces": "Machine Gun",
 		"range": 2,
 		"movement": 2,
 		"strength": 25,
