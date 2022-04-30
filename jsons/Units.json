@@ -29,6 +29,20 @@
 	{
 		"name": "Howitzer",
 		"unitType": "Ranged",
+		"range": 3,
+		"movement": 2,
+		"strength": 25,
+		"rangedStrength": 50,
+		"cost": 390,
+		"requiredTech": "Dynamite",
+		"upgradesTo": "Rocket Artillery",
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"obsoleteTech": "Rocketry",
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Siege Mortar",
+		"unitType": "Ranged",
 		"range": 2,
 		"movement": 2,
 		"strength": 25,
