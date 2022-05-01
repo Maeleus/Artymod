@@ -1,29 +1,60 @@
 [
+/* Renaisance Era */	
 	{
-		"name": "Crossbowman",
-		"unitType": "Ranged",
-		"range": 2,
-		"movement": 2,
-		"strength": 13,
-		"rangedStrength": 18,
-		"cost": 120,
-		"requiredTech": "Machinery",
-		"upgradesTo": "Mortar",
-		"obsoleteTech": "Industrialization",
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Mortar",
+		"name": "Field Cannon", /* Should be prerequisite for Frigate */
 		"unitType": "Ranged",
 		"range": 2,
 		"movement": 2,
 		"strength": 15,
-		"rangedStrength": 30,
+		"rangedStrength": 28,
+		"cost": 185,
+		"requiredTech": "Chemistry",
+		"upgradesTo": "Field Artillery",
+		"obsoleteTech": "Industrialization",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Siege Cannon",
+		"unitType": "Ranged",
+		"range": 2,
+		"movement": 2,
+		"strength": 14,
+		"rangedStrength": 20,
+		"cost": 185,
+		"requiredTech": "Chemistry",
+		"upgradesTo": "Siege Artillery",
+		"obsoleteTech": "Dynamite",
+		"attackSound": "arrow"
+	},
+/* Industrial Era */	
+  	{
+		"name": "Field Artillery",
+		"unitType": "Ranged",
+		"range": 2,
+		"movement": 2,
+		"strength": 18,
+		"rangedStrength": 32,
 		"cost": 225,
 		"requiredTech": "Industrialization",
 		"upgradesTo": "Howitzer",
 		"uniques": ["Ranged attacks may be performed over obstacles"],
-		"obsoleteTech": "Ballistics",
+		"obsoleteTech": "Dynamite",
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "French 75",
+		"unitType": "Ranged",
+		"uniqueTo": "France",
+		"replaces": "Field Artillery
+		"range": 2,
+		"movement": 3,
+		"strength": 18,
+		"rangedStrength": 32,
+		"cost": 225,
+		"requiredTech": "Industrialization",
+		"upgradesTo": "Howitzer",
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"obsoleteTech": "Dynamite",
 		"attackSound": "machinegun"
 	},
 	{
@@ -32,8 +63,8 @@
 		"range": 3,
 		"movement": 2,
 		"strength": 20,
-		"rangedStrength": 35,
-		"cost": 390,
+		"rangedStrength": 40,
+		"cost": 320,
 		"requiredTech": "Dynamite",
 		"upgradesTo": "Rocket Artillery",
 		"uniques": ["Ranged attacks may be performed over obstacles"],
@@ -41,16 +72,30 @@
 		"attackSound": "machinegun"
 	},
 	{
+		"name": "Siege Artillery",
+		"unitType": "Ranged",
+		"range": 3,
+		"movement": 2,
+		"strength": 25,
+		"rangedStrength": 30,
+		"cost": 320,
+		"requiredTech": "Dynamite",
+		"upgradesTo": "Siege Mortar",
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"obsoleteTech": "Ballistics",
+		"attackSound": "machinegun"
+	},
+	{
 		"name": "Siege Mortar",
 		"unitType": "Ranged",
-		"range": 2,
+		"range": 4,
 		"movement": 2,
 		"strength": 25,
 		"rangedStrength": 50,
 		"cost": 390,
 		"requiredTech": "Ballistics",
 		"upgradesTo": "Rocket Artillery",
-		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"uniques": ["Ranged attacks may be performed over obstacles","Rough terrain penalty"],
 		"obsoleteTech": "Rocketry",
 		"attackSound": "machinegun"
 	}
