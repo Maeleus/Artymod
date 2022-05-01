@@ -59,6 +59,7 @@
 		"cost": 225,
 		"requiredTech": "Industrialization",
 		"upgradesTo": "Howitzer",
+		"promotions": ["Logistics"],
 		"uniques": ["Ranged attacks may be performed over obstacles"],
 		"obsoleteTech": "Dynamite",
 		"attackSound": "machinegun"
