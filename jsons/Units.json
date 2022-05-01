@@ -23,6 +23,11 @@
 		"cost": 185,
 		"requiredTech": "Chemistry",
 		"upgradesTo": "Siege Artillery",
+		"uniques": [
+			"[+200]% Strength <vs cities>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack"
+		],
 		"obsoleteTech": "Dynamite",
 		"attackSound": "arrow"
 	},
@@ -81,7 +86,12 @@
 		"cost": 320,
 		"requiredTech": "Dynamite",
 		"upgradesTo": "Siege Mortar",
-		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"promotions": "[Indirect Fire"],
+		"uniques": [
+			"[+200]% Strength <vs cities>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack"
+		],
 		"obsoleteTech": "Ballistics",
 		"attackSound": "machinegun"
 	},
@@ -96,11 +106,15 @@
 		"cost": 390,
 		"requiredTech": "Ballistics",
 		"upgradesTo": "Rocket Artillery",
+		"promotions": ["Indirect Fire"],
 		"uniques": [
 			"Ranged attacks may be performed over obstacles",
 			"Rough terrain penalty",
 			"Consumes [1] [Oil]",
 			"Consumes [1] [Iron]"
+			"[+200]% Strength <vs cities>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack"
 		],
 		"obsoleteTech": "Rocketry",
 		"attackSound": "machinegun"
