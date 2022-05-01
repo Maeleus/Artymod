@@ -86,7 +86,7 @@
 		"cost": 320,
 		"requiredTech": "Dynamite",
 		"upgradesTo": "Siege Mortar",
-		"promotions": "[Indirect Fire"],
+		"promotions": ["Indirect Fire"],
 		"uniques": [
 			"[+200]% Strength <vs cities>",
 			"No defensive terrain bonus",
