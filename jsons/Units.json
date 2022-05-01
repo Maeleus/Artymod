@@ -15,7 +15,7 @@
 	},
 	{
 		"name": "Siege Cannon",
-		"unitType": "Ranged",
+		"unitType": "Siege",
 		"range": 2,
 		"movement": 2,
 		"strength": 14,
@@ -80,7 +80,7 @@
 	},
 	{
 		"name": "Siege Artillery",
-		"unitType": "Ranged",
+		"unitType": "Siege",
 		"range": 3,
 		"movement": 2,
 		"strength": 25,
@@ -101,7 +101,7 @@
 /* Modern Era */	
 	{
 		"name": "Siege Mortar",
-		"unitType": "Ranged",
+		"unitType": "Siege",
 		"range": 4,
 		"movement": 2,
 		"strength": 25,
