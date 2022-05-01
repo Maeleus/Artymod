@@ -45,7 +45,7 @@
 		"name": "French 75",
 		"unitType": "Ranged",
 		"uniqueTo": "France",
-		"replaces": "Field Artillery
+		"replaces": "Field Artillery",
 		"range": 2,
 		"movement": 3,
 		"strength": 18,
@@ -85,6 +85,7 @@
 		"obsoleteTech": "Ballistics",
 		"attackSound": "machinegun"
 	},
+/* Modern Era */	
 	{
 		"name": "Siege Mortar",
 		"unitType": "Ranged",
