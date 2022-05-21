@@ -1,163 +1,244 @@
 [
-/* Renaisance Era */	
-	{
-		"name": "Field Cannon", /* Should be prerequisite for Frigate */
-		"unitType": "Ranged",
-		"range": 2,
-		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 28,
-		"cost": 185,
-		"requiredTech": "Chemistry",
-		"upgradesTo": "Field Artillery",
-		"obsoleteTech": "Industrialization",
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Siege Cannon",
-		"unitType": "Siege",
-		"range": 2,
-		"movement": 2,
-		"strength": 14,
-		"rangedStrength": 20,
-		"cost": 185,
-		"requiredTech": "Chemistry",
-		"upgradesTo": "Siege Artillery",
-		"uniques": [
-			"[+200]% Strength <vs cities>",
-			"No defensive terrain bonus",
-			"Must set up to ranged attack",
-			"[-1] Sight"
+/*Medival Era */
+{
+	"name": "Crossbowman",
+	"unitType": "Archery",
+	"range": 2,
+	"movement": 2,
+	"strength": 13,
+	"rangedStrength": 18,
+	"cost": 120,
+	"requiredTech": "Machinery",
+	"upgradesTo": "Field Cannon",
+	"obsoleteTech": "Chemistry",
+	"attackSound": "arrow"
+},
+{
+	"name": "Chu-Ko-Nu",
+	"unitType": "Archery",
+	"replaces": "Crossbowman",
+	"uniqueTo": "China",
+	"range": 2,
+	"movement": 2,
+	"strength": 13,
+	"rangedStrength": 14,
+	"cost": 120,
+	"requiredTech": "Machinery",
+	"upgradesTo": "Field Cannon",
+	"promotions": ["Logistics"],
+	"obsoleteTech": "Chemistry",
+	"attackSound": "arrow"
+},
+{
+	"name": "Longbowman",
+	"unitType": "Archery",
+	"replaces": "Crossbowman",
+	"uniqueTo": "England",
+	"range": 2,
+	"movement": 2,
+	"strength": 13,
+	"rangedStrength": 18,
+	"cost": 120,
+	"requiredTech": "Machinery",
+	"upgradesTo": "Field Cannon",
+	"promotions": ["Extended Range"],
+	"obsoleteTech": "Chemistry",
+	"attackSound": "arrow"
+},
+{
+	"name": "Trebuchet",
+	"unitType": "Siege",
+	"range": 2,
+	"movement": 2,
+	"strength": 12,
+	"rangedStrength": 14,
+	"cost": 120,
+	"requiredTech": "Physics",
+	"upgradesTo": "Siege Cannon",
+	"uniques": [
+		"[+200]% Strength <vs cities>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack",
+		"[-1] Sight"
 		],
-		"obsoleteTech": "Dynamite",
-		"attackSound": "arrow"
-	},
-/* Industrial Era */	
-  	{
-		"name": "Field Artillery",
-		"unitType": "Ranged",
-		"range": 2,
-		"movement": 2,
-		"strength": 18,
-		"rangedStrength": 32,
-		"cost": 225,
-		"requiredTech": "Industrialization",
-		"upgradesTo": "Howitzer",
-		"uniques": ["Ranged attacks may be performed over obstacles"],
-		"obsoleteTech": "Dynamite",
-		"attackSound": "machinegun"
-	},
-	{
-		"name": "French 75",
-		"unitType": "Ranged",
-		"uniqueTo": "France",
-		"replaces": "Field Artillery",
-		"range": 2,
-		"movement": 3,
-		"strength": 18,
-		"rangedStrength": 32,
-		"cost": 225,
-		"requiredTech": "Industrialization",
-		"upgradesTo": "Howitzer",
-		"promotions": ["Logistics"],
-		"uniques": ["Ranged attacks may be performed over obstacles"],
-		"obsoleteTech": "Dynamite",
-		"attackSound": "machinegun"
-	},
-	{
-		"name": "Howitzer",
-		"unitType": "Ranged",
-		"range": 3,
-		"movement": 2,
-		"strength": 20,
-		"rangedStrength": 40,
-		"cost": 320,
-		"requiredTech": "Dynamite",
-		"upgradesTo": "Rocket Artillery",
-		"uniques": ["Ranged attacks may be performed over obstacles"],
-		"obsoleteTech": "Rocketry",
-		"attackSound": "machinegun"
-	},
-	{
-		"name": "Siege Artillery",
-		"unitType": "Siege",
-		"range": 3,
-		"movement": 2,
-		"strength": 25,
-		"rangedStrength": 30,
-		"cost": 320,
-		"requiredTech": "Dynamite",
-		"upgradesTo": "Siege Mortar",
-		"promotions": ["Indirect Fire"],
-		"uniques": [
-			"[+200]% Strength <vs cities>",
-			"No defensive terrain bonus",
-			"Must set up to ranged attack",
-			"[-1] Sight"
+	"obsoleteTech": "Chemistry",
+	"attackSound": "throw"
+},
+{
+	"name": "Hwach'a",
+	"unitType": "Siege",
+	"replaces": "Trebuchet",
+	"uniqueTo": "Korea",
+	"range": 2,
+	"movement": 2,
+	"strength": 11,
+	"rangedStrength": 26,
+	"cost": 120,
+	"requiredTech": "Physics",
+	"upgradesTo": "Siege Cannon",
+	"uniques": [
+		"No defensive terrain bonus",
+		"Must set up to ranged attack"
 		],
-		"obsoleteTech": "Ballistics",
-		"attackSound": "machinegun"
-	},
-/* Modern Era */	
-	{
-		"name": "Siege Mortar",
-		"unitType": "Siege",
-		"range": 4,
-		"movement": 2,
-		"strength": 25,
-		"rangedStrength": 50,
-		"cost": 390,
-		"requiredTech": "Ballistics",
-		"upgradesTo": "Rocket Artillery",
-		"promotions": ["Indirect Fire"],
-		"uniques": [
-			"Rough terrain penalty",
-			"Consumes [1] [Oil]",
-			"Consumes [1] [Iron]"
-			"[+200]% Strength <vs cities>",
-			"No defensive terrain bonus",
-			"Must set up to ranged attack",
-			"[-1] Sight"
+	"obsoleteTech": "Chemistry",
+	"attackSound": "throw"
+},
+/* Renaisance Era */
+{
+	"name": "Field Cannon", /* Should be prerequisite for Frigate */
+	"unitType": "Ranged Gunpowder",
+	"range": 2,
+	"movement": 2,
+	"strength": 15,
+	"rangedStrength": 28,
+	"cost": 185,
+	"requiredTech": "Chemistry",
+	"upgradesTo": "Field Artillery",
+	"obsoleteTech": "Industrialization",
+	"attackSound": "cannon"
+},
+{
+	"name": "Siege Cannon",
+	"unitType": "Siege",
+	"range": 2,
+	"movement": 2,
+	"strength": 14,
+	"rangedStrength": 20,
+	"cost": 185,
+	"requiredTech": "Chemistry",
+	"upgradesTo": "Siege Artillery",
+	"uniques": [
+		"[+200]% Strength <vs cities>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack",
+		"[-1] Sight"
 		],
-		"obsoleteTech": "Rocketry",
-		"attackSound": "machinegun"
-	},
-/* Atomic Era */	
-	{
-		"name": "Rocket Artillery",
-		"unitType": "Ranged",
-		"range": 3,
-		"movement": 3,
-		"strength": 45,
-		"rangedStrength": 60,
-		"cost": 425,
-		"requiredTech": "Rocketry",
-		"promotions": ["Indirect Fire"],
-		"uniques": [
-			"Consumes [1] [Oil]",
-			"Consumes [1] [Aluminum]",
-			"Can carry [1] [Missile] units"
+	"obsoleteTech": "Dynamite",
+	"attackSound": "cannon"
+},
+/* Industrial Era */
+{
+	"name": "Field Artillery",
+	"unitType": "Ranged Gunpowder",
+	"range": 2,
+	"movement": 2,
+	"strength": 18,
+	"rangedStrength": 32,
+	"cost": 225,
+	"requiredTech": "Industrialization",
+	"upgradesTo": "Howitzer",
+	"uniques": ["Ranged attacks may be performed over obstacles"],
+	"obsoleteTech": "Dynamite",
+	"attackSound": "cannon"
+},
+{
+	"name": "French 75",
+	"unitType": "Ranged Gunpowder",
+	"uniqueTo": "France",
+	"replaces": "Field Artillery",
+	"range": 2,
+	"movement": 3,
+	"strength": 18,
+	"rangedStrength": 32,
+	"cost": 225,
+	"requiredTech": "Industrialization",
+	"upgradesTo": "Howitzer",
+	"promotions": ["Logistics"],
+	"uniques": ["Ranged attacks may be performed over obstacles"],
+	"obsoleteTech": "Dynamite",
+	"attackSound": "cannon"
+},
+{
+	"name": "Howitzer",
+	"unitType": "Ranged Gunpowder",
+	"range": 3,
+	"movement": 2,
+	"strength": 20,
+	"rangedStrength": 40,
+	"cost": 320,
+	"requiredTech": "Dynamite",
+	"upgradesTo": "Rocket Artillery",
+	"uniques": ["Ranged attacks may be performed over obstacles"],
+	"obsoleteTech": "Rocketry",
+	"attackSound": "artillery"
+},
+{
+	"name": "Siege Artillery",
+	"unitType": "Siege",
+	"range": 3,
+	"movement": 2,
+	"strength": 25,
+	"rangedStrength": 30,
+	"cost": 320,
+	"requiredTech": "Dynamite",
+	"upgradesTo": "Siege Mortar",
+	"promotions": ["Indirect Fire"],
+	"uniques": [
+		"[+200]% Strength <vs cities>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack",
+		"[-1] Sight"
 		],
-		"attackSound": "machinegun"
-	},
-	{
-		"name": "Atomic Cannon",
-		"unitType": "Ranged",
-		"range": 5,
-		"movement": 2,
-		"strength": 45,
-		"rangedStrength": 200,
-		"cost": 600,
-		"requiredTech": "Nuclear Fission",
-		"promotions": ["Indirect Fire"],
-		"uniques": [
-			"Consumes [1] [Oil]",
-			"Consumes [1] [Aluminum]",
-			"Consumes [1] [Uranium]",
-			"Nuclear weapon of Strength [1]",
-			"Only available <if [Manhattan Project] is constructed>",
-			"Blast radius [2]"
+	"obsoleteTech": "Ballistics",
+	"attackSound": "artillery"
+},
+/* Modern Era */
+{
+	"name": "Siege Mortar",
+	"unitType": "Siege",
+	"range": 4,
+	"movement": 2,
+	"strength": 25,
+	"rangedStrength": 50,
+	"cost": 390,
+	"requiredTech": "Ballistics",
+	"upgradesTo": "Rocket Artillery",
+	"promotions": ["Indirect Fire"],
+	"uniques": [
+		"Rough terrain penalty",
+		"Consumes [1] [Oil]",
+		"[+200]% Strength <vs cities>",
+		"No defensive terrain bonus",
+		"Must set up to ranged attack",
+		"[-1] Sight"
 		],
-		"attackSound": "machinegun"
-	}
+	"obsoleteTech": "Rocketry",
+	"attackSound": "artillery"
+},
+/* Atomic Era */
+{
+	"name": "Rocket Artillery",
+	"unitType": "Siege",
+	"range": 3,
+	"movement": 3,
+	"strength": 45,
+	"rangedStrength": 60,
+	"cost": 425,
+	"requiredTech": "Rocketry",
+	"promotions": ["Indirect Fire"],
+	"uniques": [
+		"Consumes [1] [Aluminum]",
+		"Can carry [1] [Missile] units"
+		],
+	"attackSound": "missile"
+},
+{
+	"name": "Atomic Cannon",
+	"unitType": "Siege",
+	"range": 5,
+	"movement": 2,
+	"strength": 45,
+	"rangedStrength": 100,
+	"cost": 600,
+	"requiredTech": "Nuclear Fission",
+	"promotions": ["Indirect Fire"],
+	"uniques": [
+		"Never appears as a Barbarian unit",
+		"Consumes [1] [Uranium]",
+		"Nuclear weapon of Strength [1]",
+		"Only available <if [Manhattan Project] is constructed>",
+		"Blast radius [1]"
+		],
+	"attackSound": "nuke"
+}
 ]
